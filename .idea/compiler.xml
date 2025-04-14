@@ -10,7 +10,12 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="co.za.VodacomTestAutomation" target="19" />
+      <module name="co.za.VodacomTestAutomation" target="17" />
     </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="co.za.VodacomTestAutomation" options="-parameters" />
+    </option>
   </component>
 </project>
