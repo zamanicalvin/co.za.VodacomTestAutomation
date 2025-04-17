@@ -99,6 +99,11 @@ http://maven.apache.org/xsd/maven-4.0.0.xsd">
             <artifactId>json-schema-validator</artifactId>
             <version>4.5.1</version>
         </dependency>
+        <dependency>
+            <groupId>org.codehaus.groovy</groupId>
+            <artifactId>groovy</artifactId>
+            <version>3.0.8</version>
+        </dependency>
 
     </dependencies>
     <properties>

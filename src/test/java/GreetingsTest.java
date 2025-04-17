@@ -12,7 +12,7 @@ public class GreetingsTest {
                 get("/greeting").
                 then().
                 assertThat().
-                body("content",equalTo("Hello, World"));
+                body("content",equalTo("Hello, World!"));
     }
 
 }
