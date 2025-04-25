@@ -4,13 +4,17 @@ import cucumber.api.java.en.And;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
 
 public class Steps {
+    WebDriver driver = new ChromeDriver();
 
-        @Given("Open the browser and launch a vodacom website and validate that the page is loaded$")
-        public void open_the_Firefox_and_launch_the_application() throws Throwable
+        @Given("Open the browser and launch a vodacom website and validate that the page is loaded")
+        public void open_the_browser_and_launch_the_application() throws Throwable
         {
-            System.out.println("This Step open the Firefox and launch the application.");
+            driver.get("https://www.vodacom.co.za/");
+            //System.out.println("This Step open the Firefox and launch the application.");
         }
         @And("Select the Shop menu item under the Latest Promotions and click Online Exclusive Deals$")
         public void select_the_Shop_menu_item_under_the_Latest_Promotions_and_click_Online_Exclusive_Dealsn() throws Throwable
@@ -30,7 +34,7 @@ public class Steps {
             System.out.println("This step click on the Reset button.");
         }
 
-    @And("Click on See details for a specific device {string}")
+    @And("Click on See details for a specific device (.*)")
     public void clickOnSeeDetailsForASpecificDevice(String arg0) {
     }
 

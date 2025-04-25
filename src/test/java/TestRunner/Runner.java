@@ -3,6 +3,7 @@ package TestRunner;
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
 import com.cucumber.listener.Reporter;
+import cucumber.api.testng.AbstractTestNGCucumberTests;
 import org.junit.AfterClass;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
@@ -13,7 +14,7 @@ import java.util.Map;
 import service.ExtentReportService;
 
 
-public class Runner {
+public class Runner extends AbstractTestNGCucumberTests {
 
     public static ExtentReports extent;
     public static ExtentTest test;
