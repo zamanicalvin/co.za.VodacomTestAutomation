@@ -2,7 +2,7 @@
 Feature: Navigate Vodacom website
   @VodacomNavigation
   Scenario Outline: Navigate Latest Promotions and Online Exclusive Deals
-    Given Open the browser and launch a vodacom website and validate that the page is loaded
+    Given Open the browser and launch a Vodacom website and validate that the page is loaded
     And Select the Shop menu item under the Latest Promotions and click Online Exclusive Deals
     And Click on See details for a specific device "<device>"
     Then Validate that the Deals details screen has been loaded with correct device as per your input

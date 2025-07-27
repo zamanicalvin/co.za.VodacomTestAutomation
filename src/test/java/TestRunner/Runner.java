@@ -18,7 +18,7 @@ public class Runner extends AbstractTestNGCucumberTests {
 
     public static ExtentReports extent;
     public static ExtentTest test;
-    public static final String TEST_ENVIRONMENT =  ((ExtentReportService)new ClassPathXmlApplicationContext("factorybean-spring-ctx.xml").getBean("extentReportService")).getTestEnvironment();
+    public static final String TEST_ENVIRONMENT =  ((ExtentReportService)new ClassPathXmlApplicationContext("src/test/resources/factorybean-spring-ctx.xml").getBean("extentReportService")).getTestEnvironment();
 
     public static final Map<String, String> SCENARION_TARGET_PATH_REGISTRY_MAP = new HashMap<>();
     @AfterClass

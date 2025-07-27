@@ -10,7 +10,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 public class Steps {
     WebDriver driver = new ChromeDriver();
 
-        @Given("Open the browser and launch a vodacom website and validate that the page is loaded")
+        @Given("Open the browser and launch a Vodacom website and validate that the page is loaded")
         public void open_the_browser_and_launch_the_application() throws Throwable
         {
             driver.get("https://www.vodacom.co.za/");
